@@ -1,0 +1,15 @@
+2015-04-02 14:36:06,664 [Worker-28] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: org.springframework.samples.service.service:cobaTA:0.0.1-SNAPSHOT @ D:\AMANDA\COLLEGES\BISMILLAH\TRIAL AND ERROR\ModulMataKuliahGit\cobaTA\pom.xml.
+2015-04-02 14:36:23,602 [Worker-35] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: org.springframework.samples.service.service:cobaTA:0.0.1-SNAPSHOT @ D:\AMANDA\COLLEGES\BISMILLAH\TRIAL AND ERROR\ModulMataKuliahGit\cobaTA\pom.xml.
+2015-04-02 14:36:45,212 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-02 14:36:45,267 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2015-04-02 14:36:45,301 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-02 14:36:45,302 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\AMANDA\COLLEGES\BISMILLAH\TRIAL AND ERROR\ModulMataKuliahGit\cobaTA\src\test\resources
+2015-04-02 14:36:47,354 [Worker-35] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: org.springframework.samples.service.service:cobaTA:0.0.1-SNAPSHOT @ D:\AMANDA\COLLEGES\BISMILLAH\TRIAL AND ERROR\ModulMataKuliahGit\cobaTA\pom.xml.
+2015-04-02 14:36:49,388 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-02 14:36:49,399 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2015-04-02 14:36:49,414 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-02 14:36:49,415 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\AMANDA\COLLEGES\BISMILLAH\TRIAL AND ERROR\ModulMataKuliahGit\cobaTA\src\test\resources
+2015-04-02 14:36:50,859 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-02 14:36:50,860 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-02 14:36:50,863 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2015-04-02 14:36:50,863 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\AMANDA\COLLEGES\BISMILLAH\TRIAL AND ERROR\ModulMataKuliahGit\cobaTA\src\test\resources

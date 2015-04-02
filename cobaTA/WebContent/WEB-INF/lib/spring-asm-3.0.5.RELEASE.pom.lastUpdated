@@ -1,0 +1,4 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Tue Feb 17 11:29:20 ICT 2015
+http\://repo.maven.apache.org/maven2/.error=Could not transfer artifact org.springframework\:spring-asm\:pom\:3.0.5.RELEASE from/to central (http\://repo.maven.apache.org/maven2)\: Failed to transfer http\://repo.maven.apache.org/maven2/org/springframework/spring-asm/3.0.5.RELEASE/spring-asm-3.0.5.RELEASE.pom. Error code 502, Bad Gateway
+@default-http\://repo.maven.apache.org/maven2/.lastUpdated=1424147360371
