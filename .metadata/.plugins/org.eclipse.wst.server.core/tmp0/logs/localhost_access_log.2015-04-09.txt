@@ -1,0 +1,17 @@
+127.0.0.1 - - [09/Apr/2015:04:54:08 +0700] "GET / HTTP/1.1" 200 1170
+0:0:0:0:0:0:0:1 - - [09/Apr/2015:04:54:10 +0700] "GET /modul/ HTTP/1.1" 404 992
+0:0:0:0:0:0:0:1 - - [09/Apr/2015:04:54:16 +0700] "GET /modul/menukurikulum HTTP/1.1" 200 3334
+0:0:0:0:0:0:0:1 - - [09/Apr/2015:04:54:17 +0700] "GET /modul/menukurikulum/tambah HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [09/Apr/2015:04:54:17 +0700] "GET /modul/menukurikulum/tambah HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [09/Apr/2015:04:54:17 +0700] "GET /modul/menukurikulum/tambah HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [09/Apr/2015:04:54:17 +0700] "GET /modul/menukurikulum/tambah HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [09/Apr/2015:04:54:17 +0700] "GET /modul/menukurikulum/tambah HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [09/Apr/2015:04:54:17 +0700] "GET /modul/menukurikulum/tambah HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [09/Apr/2015:04:54:17 +0700] "GET /modul/menukurikulum/tambah HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [09/Apr/2015:04:54:17 +0700] "GET /modul/menukurikulum/tambah HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [09/Apr/2015:04:54:17 +0700] "GET /modul/menukurikulum/tambah HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [09/Apr/2015:04:54:17 +0700] "GET /modul/menukurikulum/tambah HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [09/Apr/2015:04:54:17 +0700] "GET /modul/menukurikulum/tambah HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [09/Apr/2015:05:55:32 +0700] "GET /modul/ HTTP/1.1" 404 992
+0:0:0:0:0:0:0:1 - - [09/Apr/2015:05:55:38 +0700] "GET /modul/menukurikulum HTTP/1.1" 200 3320
+0:0:0:0:0:0:0:1 - - [09/Apr/2015:05:55:41 +0700] "GET /modul/tambah HTTP/1.1" 200 4486

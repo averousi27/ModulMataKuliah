@@ -1,0 +1,12 @@
+package com.AIS.Modul.MataKuliah.Repository;
+
+import java.util.List;
+
+import com.AIS.Modul.MataKuliah.Model.SatMan;
+
+public interface SatManRepository {
+	public List<SatMan> findAll();
+    public SatMan findById(String idSatMan);
+    public void addKurikulum(SatMan satMan);
+    public void editKurikulum(SatMan satMan, String idSatMan); 
+}

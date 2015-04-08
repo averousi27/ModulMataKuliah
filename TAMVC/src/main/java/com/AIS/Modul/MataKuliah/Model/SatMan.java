@@ -30,7 +30,7 @@ public class SatMan{
 	@Column(name="status_sat_man")
 	private String statusSatMan; 
  
-	@OneToMany(mappedBy="satman")
+	@OneToMany(fetch=FetchType.LAZY, mappedBy="satman")
 	private List<Kurikulum> kurikulums;
 
 	public String getIdSatMan() {

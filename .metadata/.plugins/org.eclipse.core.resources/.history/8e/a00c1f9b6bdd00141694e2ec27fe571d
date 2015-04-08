@@ -1,0 +1,32 @@
+package com.AIS.Modul.MataKuliah.Service;
+
+import java.util.List;
+
+import com.AIS.Modul.MataKuliah.Model.SatMan;
+
+public class SatManServiceImpl implements SatManService{
+
+	@Override
+	public List<SatMan> findAll() {
+		return satManRepo.findAll();;
+	}
+
+	@Override
+	public SatMan findById(String idKurikulum) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void addKurikulum(SatMan satMan) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void editKurikulum(SatMan kurikulum, String idSatMan) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

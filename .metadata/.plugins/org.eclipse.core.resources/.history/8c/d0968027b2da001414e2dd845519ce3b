@@ -1,0 +1,7 @@
+package com.AIS.Modul.MataKuliah.Service;
+
+import com.AIS.Modul.MataKuliah.Service.KurikulumService;
+
+public class KurikulumServiceImpl {
+	
+}

@@ -1,0 +1,40 @@
+package com.AIS.Modul.MataKuliah.Repository;
+
+import java.util.List;
+
+import org.hibernate.SessionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.AIS.Modul.MataKuliah.Model.SatMan;
+
+public class SatManRepositoryImpl implements SatManRepository {
+
+	@Autowired
+	private SessionFactory sessionFactory;
+	
+	@Override
+	@Transactional
+	public List<SatMan> findAll() {
+		return sessionFactory.getCurrentSession().createQuery("from SatMan").list();
+	}
+
+	@Override
+	public SatMan findById(String idSatMan) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void addSatMan(SatMan satMan) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void editSatMan(SatMan satMan, String idSatMan) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}
