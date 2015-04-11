@@ -5,7 +5,81 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2015-04-07T17:55:39Z</updated>
+  <updated>2015-04-08T18:52:00Z</updated>
+  <entry>
+    <title>SpringOne2GX 2014 Replay: Performance Tuning Grails Applications</title>
+    <link rel="alternate" href="https://spring.io/blog/2015/04/08/springone2gx-2014-replay-performance-tuning-grails-applications" />
+    <category term="news" label="News and Events" />
+    <author>
+      <name>Pieter Humphrey</name>
+    </author>
+    <id>tag:spring.io,2015-04-09:2072</id>
+    <updated>2015-04-08T18:52:00Z</updated>
+    <content type="html">&lt;p&gt;Recorded at SpringOne2GX 2014. &lt;/p&gt;
+&lt;p&gt;Speaker: Lari Hotari &lt;/p&gt;
+&lt;p&gt;Essential Grails Track &lt;/p&gt;
+&lt;p&gt;Slides: &lt;a href="http://www.slideshare.net/SpringCentral/grails-performanceoptimization-s2gx-2014-41177969"&gt;http://www.slideshare.net/SpringCentral/grails-performanceoptimization-s2gx-2014-41177969 &lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Grails has great performance characteristics but as with all full stack frameworks, attention must be paid to optimize performance.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&#xD;
+  &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/thdFMj9PRl4" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&#xD;
+&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <title>SpringOne2GX 2014 Replay: Runtime Metaprogramming With Groovy</title>
+    <link rel="alternate" href="https://spring.io/blog/2015/04/08/springone2gx-2014-replay-runtime-metaprogramming-with-groovy" />
+    <category term="news" label="News and Events" />
+    <author>
+      <name>Pieter Humphrey</name>
+    </author>
+    <id>tag:spring.io,2015-04-09:2071</id>
+    <updated>2015-04-08T18:51:00Z</updated>
+    <content type="html">&lt;p&gt;Recorded at SpringOne2GX 2014. &lt;/p&gt;
+&lt;p&gt;Speaker: Jeff Scott Brown &lt;/p&gt;
+&lt;p&gt;More Groovy Track &lt;/p&gt;
+&lt;p&gt;Slides: &lt;a href="http://www.slideshare.net/SpringCentral/runtime-metaprogrammingwithgroovy"&gt;http://www.slideshare.net/SpringCentral/runtime-metaprogrammingwithgroovy&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The dynamic runtime nature of Groovy is one of the things that sets it apart from standard Java and makes it a fantastic language for building dynamic applications for the Java Platform. The metaprogramming capabilities offered by the language provide everything that an application development team needs to build systems that are far more capable than their all Java counterparts. &lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&#xD;
+  &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/0uxQAYvPax8" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&#xD;
+&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <title>SpringOne2GX 2014 Replay: Groovy Mobile Automation</title>
+    <link rel="alternate" href="https://spring.io/blog/2015/04/08/springone2gx-2014-replay-groovy-mobile-automation" />
+    <category term="news" label="News and Events" />
+    <author>
+      <name>Pieter Humphrey</name>
+    </author>
+    <id>tag:spring.io,2015-04-09:2070</id>
+    <updated>2015-04-08T18:47:00Z</updated>
+    <content type="html">&lt;p&gt;Recorded at SpringOne2GX 2014. &lt;/p&gt;
+&lt;p&gt;Speaker: Bobby Warner &lt;/p&gt;
+&lt;p&gt;More Groovy Track &lt;/p&gt;
+&lt;p&gt;Slides: &lt;a href="http://www.slideshare.net/SpringCentral/groovy-mobileautomation"&gt;http://www.slideshare.net/SpringCentral/groovy-mobileautomation &lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;In this talk, we will discuss mobile automation and dive into the iOS and Android functional testing world using Groovy, Spock and Gradle.&lt;/p&gt;
+&lt;p&gt;&#xD;
+  &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/IjPox3Nfoeo" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&#xD;
+&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <title>SpringOne2GX 2014 Replay: Advanced GORM: Beyond Relational</title>
+    <link rel="alternate" href="https://spring.io/blog/2015/04/08/springone2gx-2014-replay-advanced-gorm-beyond-relational" />
+    <category term="news" label="News and Events" />
+    <author>
+      <name>Pieter Humphrey</name>
+    </author>
+    <id>tag:spring.io,2015-04-09:2069</id>
+    <updated>2015-04-08T18:45:00Z</updated>
+    <content type="html">&lt;p&gt;Recorded at SpringOne2GX 2014. &lt;/p&gt;
+&lt;p&gt;Speaker: Graeme Rocher &lt;/p&gt;
+&lt;p&gt;More Groovy Track &lt;/p&gt;
+&lt;p&gt;Slides: &lt;a href="http://www.slideshare.net/SpringCentral/2-gx-2014-advanced-gorm"&gt;http://www.slideshare.net/SpringCentral/2-gx-2014-advanced-gorm&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;In this talk, Grails project lead Graeme Rocher will demonstrate some less known, advanced features of GORM and explore the possibilities offered going beyond the relational database.&lt;/p&gt;
+&lt;p&gt;&#xD;
+  &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/liVcKFhW91I" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&#xD;
+&lt;/p&gt;</content>
+  </entry>
   <entry>
     <title>This Week in Spring - April 7th, 2015</title>
     <link rel="alternate" href="https://spring.io/blog/2015/04/07/this-week-in-spring-april-7th-2015" />
@@ -14,23 +88,27 @@
       <name>Josh Long</name>
     </author>
     <id>tag:spring.io,2015-04-07:2068</id>
-    <updated>2015-04-07T17:55:39Z</updated>
+    <updated>2015-04-07T17:55:00Z</updated>
     <content type="html">&lt;p&gt;Welcome to another installment of &lt;em&gt;This Week in Spring&lt;/em&gt;! This week, I&amp;rsquo;m off to Paris, France for Devoxx France. Many of us on the Spring and Cloud Foundry teams will be there, so don&amp;rsquo;t hesitate &lt;a href="http://twitter.com/starbuxman"&gt;to reach out&lt;/a&gt; if you&amp;rsquo;re about, we&amp;rsquo;d love to hear from you! Also, even if you&amp;rsquo;re not at the show, come &lt;a href="https://www.eventbrite.com/e/venez-decouvrir-devoxx-france-le-temps-dune-soiree-tickets-16446026508"&gt;meet many of us on the Spring team (including Juergen Hoeller himself, Stéphane Nicoll, Brian Clozel, Sébastien Deleuze and of course yours truly) at this free Devoxx France event&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Also, this Thursday I&amp;rsquo;ll be speaking at the vJUG again, &lt;a href="http://www.meetup.com/virtualJUG/events/221218834/"&gt;this time on building microservices with Spring Cloud&lt;/a&gt;. Don&amp;rsquo;t miss it!&lt;/p&gt;&lt;p&gt;Erratum: @springjuergen, @snicoll, @sdeleuze, @brianclozel mais aussi très probablement @starbuxman. Pas d&amp;rsquo;excuses : eventbrite.com/e/venez-decouv…&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;Matt Stine just announced the availability of two new guides and related Spring Cloud support for &lt;a href="https://spring.io/blog/2015/04/06/lattice-and-spring-cloud-resilient-sub-structure-for-your-cloud-native-spring-applications"&gt;building Spring applications with Docker and running them on the Lattice distributed runtime&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Boot co-lead Phil Webb just announced that &lt;a href="https://spring.io/blog/2015/03/31/spring-boot-1-1-12-released"&gt;Spring Boot 1.1.12&lt;/a&gt; and &lt;a href="https://spring.io/blog/2015/03/31/spring-boot-1-2-3-released"&gt;Spring Boot 1.2.3 are now available&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Big-data ninja Thomas Risberg just released &lt;a href="https://spring.io/blog/2015/04/03/spring-for-apache-hadoop-2-1-2-released"&gt;Spring for Apache Hadoop 2.1.2&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Social lead Craig Walls just announced &lt;a href="https://spring.io/blog/2015/04/07/spring-social-facebook-2-0-0-rc1-released"&gt;Spring Social Facebook 2.0.0.RC1&lt;/a&gt;. The new release brings Spring Social Facebook up to version 2.3 of the Facebook API and includes backwards incompatible changes.&lt;/li&gt;
+  &lt;li&gt;Spring ninja Andy Wilkinson just announced the latest cut &lt;a href="https://spring.io/blog/2015/04/01/spring-io-platform-1-1-2-released"&gt;of the Spring IO Platform BOM, 1.1.2&lt;/a&gt; and &lt;a href="https://spring.io/blog/2015/04/01/spring-io-platform-1-0-5-released"&gt;Spring IO Platform 1.0.5&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Matt Stine just announced the availability of two new guides and related Spring Cloud support for &lt;a href="https://spring.io/blog/2015/04/06/lattice-and-spring-cloud-resilient-sub-structure-for-your-cloud-native-spring-applications"&gt;building Spring applications with Docker and running them on the Lattice distributed runtime&lt;/a&gt;. What is Lattice? It&amp;rsquo;s a much smaller subset of Cloud Foundry, that you can run on your local desktop, somewhat comparable to things like Kubernetes and Mesos + Marathon.&lt;/li&gt;
+  &lt;li&gt;Done with the microservices hype? Then let&amp;rsquo;s get practical &lt;a href="https://spring.io/blog/2015/03/17/webinar-smarter-service-to-service-invocations-with-spring-cloud"&gt;on April 21st&lt;/a&gt;. I&amp;rsquo;ll be talking about how Spring Cloud integrates service registration (e.g.: Eureka, Consul, or Zookeeper), declarative REST clients (with Netflix&amp;rsquo;s Feign), reactive programming and the circuit breaker pattern with Hystrix to support easy, robust service-to-service invocations.&lt;/li&gt;
+  &lt;li&gt;Marius Bogoevici and Mark Pollack are teaming up for a webinar on Tues April 28th about &lt;a href="https://spring.io/blog/2015/03/17/webinar-reactive-data-pipelines-with-spring-xd-and-kafka"&gt;Reactive data-pipelines with Spring XD and Kafka&lt;/a&gt;, a must for any big / fast data enthusiasts.&lt;/li&gt;
   &lt;li&gt;Spring framework lead Juergen Hoeller put together a nice post &lt;a href="https://spring.io/blog/2015/04/01/ongoing-support-for-java-7-and-even-java-6"&gt;highlighting the continued, ongoing support for Java 6, 7, and 8 in Spring framework&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;and then Spring framework ninja Stéphane Nicoll followed up with a look at how, exactly, Spring maintains its precarious &lt;a href="https://spring.io/blog/2015/04/03/how-spring-achieves-compatibility-with-java-6-7-and-8"&gt;backwards compatibility across Java 6, 7, and 8&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Boot co-lead Phil Webb just announced that &lt;a href="https://spring.io/blog/2015/03/31/spring-boot-1-1-12-released"&gt;Spring Boot 1.1.12&lt;/a&gt; and &lt;a href="https://spring.io/blog/2015/03/31/spring-boot-1-2-3-released"&gt;Spring Boot 1.2.3 are now available&lt;/a&gt;&lt;br/&gt;-&lt;a href="https://spring.io/blog/2015/04/03/spring-for-apache-hadoop-2-1-2-released"&gt;Big-data ninja Thomas Risberg just released Spring for Apache Hadoop 2.1.2&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Social lead Craig Walls just announced &lt;a href="https://spring.io/blog/2015/04/07/spring-social-facebook-2-0-0-rc1-released"&gt;Spring Social Facebook 2.0.0.RC1&lt;/a&gt;. The new release brings Spring Social Facebook up to version 2.3 of the Facebook API and includes backwards incompatible changes.&lt;/li&gt;
-  &lt;li&gt;Spring ninja Greg Turnquist has converted the good Dr. Dave Syer&amp;rsquo;s epic &lt;a href="https://spring.io/blog/2015/04/02/check-out-dave-syer-s-spring-security-and-angularjs-blog-series-converted-to-tutorial"&gt;blog series on single page application security with Spring Security OAuth, Spring Cloud and Angular.js into a tutorial&lt;/a&gt;! Hurray!&lt;/li&gt;
-  &lt;li&gt;Spring ninja Andy Wilkinson just announced the latest cut &lt;a href="https://spring.io/blog/2015/04/01/spring-io-platform-1-1-2-released"&gt;of the Spring IO Platform BOM, 1.1.2&lt;/a&gt; and &lt;a href="https://spring.io/blog/2015/04/01/spring-io-platform-1-0-5-released"&gt;Spring IO Platform 1.0.5&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Security lead Rob Winch has just &lt;a href="https://spring.io/blog/2015/04/02/spring-security-kerberos-1-0-0-rc2-released"&gt;announced Spring Security Kerbreros 1.0.0.RC2&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;Spring Integration ninja Artem Bilan just announced &lt;a href="https://spring.io/blog/2015/04/07/spring-amqp-1-4-4-and-spring-integration-3-0-7-4-0-7-and-4-1-3-are-available"&gt;Spring AMQP 1.4.4 and Spring Integration 3.0.7, 4.0.7, and 4.1.3 are now available&lt;/a&gt;. These are mostly maintenance releases.&lt;/li&gt;
+  &lt;li&gt;Spring ninja Greg Turnquist has converted the good Dr. Dave Syer&amp;rsquo;s epic &lt;a href="https://spring.io/blog/2015/04/02/check-out-dave-syer-s-spring-security-and-angularjs-blog-series-converted-to-tutorial"&gt;blog series on single page application security with Spring Security OAuth, Spring Cloud and Angular.js into a tutorial&lt;/a&gt;! Hurray!&lt;/li&gt;
+  &lt;li&gt;Spring Security lead Rob Winch has just &lt;a href="https://spring.io/blog/2015/04/02/spring-security-kerberos-1-0-0-rc2-released"&gt;announced Spring Security Kerbreros 1.0.0.RC2&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;Not strictly Spring-related, but I enjoyed this post, &lt;a href="http://product.hubspot.com/blog/upgrading-to-java-8-at-scale"&gt;&lt;em&gt;Upgrading Java 8 at scale&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;Check out this post (that follows &lt;a href="http://java.dzone.com/articles/building-microservices-spring"&gt;this first installment from 2014&lt;/a&gt; ) by Sergei Egorov on building &lt;a href="http://bsideup.blogspot.de/2015/04/spring-boot-thrift-part2.html"&gt;microservices with Spring Boot, Apache Thrift and Facebook&amp;rsquo;s Swift (which removes Swift IDL files for server code)&lt;/a&gt;. You might &lt;em&gt;also&lt;/em&gt; revisit my post from a few weeks ago on using &lt;a href="https://spring.io/blog/2015/03/22/using-google-protocol-buffers-with-spring-mvc-based-rest-services"&gt;Spring framework&amp;rsquo;s Google Protocol Buffers support&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;Our friend is back, this time with a post on cleanly &lt;a href="http://www.petrikainulainen.net/programming/spring-framework/spring-from-the-trenches-injecting-property-values-into-configuration-beans/"&gt;injecting configuration properties into Spring beans&lt;/a&gt;. Ultimately, this looks very similar to Spring Boot&amp;rsquo;s &lt;code&gt;@ConfigurationProperties&lt;/code&gt; mechanism, so check that out if you&amp;rsquo;re using Spring Boot!&lt;/li&gt;
   &lt;li&gt;&lt;a href="http://learningspringapplicationdevelopment.com/"&gt;Packt has just published a new book on Spring framework &lt;/a&gt; by a Ravi Kant Soni.&lt;/li&gt;
   &lt;li&gt;You know what made my day? Seeing the third party Vaadin support for Spring Boot enumerated among the checkboxes &lt;a href="http://start.spring.io"&gt;on the Spring Initialzr&lt;/a&gt;. That&amp;rsquo;s awesome!&lt;/li&gt;
+  &lt;li&gt;MOAR Groovy and Grails replays from SpringOne2GX are released (in celebration of Grails 3.0 release), Lari Hotari&amp;rsquo;s &lt;a href="https://spring.io/blog/2015/04/08/springone2gx-2014-replay-performance-tuning-grails-applications"&gt;Performance Tuning Grails Applications&lt;/a&gt;, Jeff Scott Brown&amp;rsquo;s &lt;a href="https://spring.io/blog/2015/04/08/springone2gx-2014-replay-runtime-metaprogramming-with-groovy"&gt;Runtime Metaprogramming With Groovy&lt;/a&gt;, Bobby Warner&amp;rsquo;s &lt;a href="https://spring.io/blog/2015/04/08/springone2gx-2014-replay-groovy-mobile-automation"&gt;Groovy Mobile Automation&lt;/a&gt; and Gareme Rocher&amp;rsquo;s &lt;a href="https://spring.io/blog/2015/04/08/springone2gx-2014-replay-advanced-gorm-beyond-relational"&gt;Advanced GORM: Beyond Relational&lt;/a&gt;. Enjoy!&lt;/li&gt;
 &lt;/ul&gt;</content>
   </entry>
   <entry>
@@ -317,78 +395,6 @@ public class StreamConverter implements ConditionalGenericConverter {&#xD;
 &lt;p&gt;Learn about about Spring Cloud at &lt;a href="http://projects.spring.io/spring-cloud"&gt;http://projects.spring.io/spring-cloud&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&amp;nbsp;&lt;/p&gt;
 &lt;p&gt; &lt;iframe width="420" height="315" src="https://www.youtube.com/embed/yfC8OIQr75c" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt; &lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>SpringOne2GX 2014 Replay: GORM inside and out</title>
-    <link rel="alternate" href="https://spring.io/blog/2015/03/31/springone2gx-2014-replay-gorm-inside-and-out" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Pieter Humphrey</name>
-    </author>
-    <id>tag:spring.io,2015-03-31:2053</id>
-    <updated>2015-03-31T11:33:00Z</updated>
-    <content type="html">&lt;p&gt;Recorded at SpringOne2GX 2014. &lt;/p&gt;
-&lt;p&gt;Speaker: Jeff Scott Brown &lt;/p&gt;
-&lt;p&gt;More Groovy Track &lt;/p&gt;
-&lt;p&gt;Slides: &lt;a href="http://www.slideshare.net/SpringCentral/gorm-inside-andout"&gt;http://www.slideshare.net/SpringCentral/gorm-inside-andout&lt;/a&gt; &lt;/p&gt;
-&lt;p&gt;GORM is a super powerful ORM tool that makes ORM simple by leveraging the flexibility and expressiveness of a dynamic language like Groovy. With GORM developers get access to all of the power and flexibility of an ORM tool like Hibernate without any of the complexity.&lt;/p&gt;
-&lt;p&gt;&#xD;
-  &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/ExIfX1MFraU" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&#xD;
-&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>SpringOne2GX 2014 Replay: Groovy AST Transformations</title>
-    <link rel="alternate" href="https://spring.io/blog/2015/03/31/springone2gx-2014-replay-groovy-ast-transformations" />
-    <category term="news" label="News and Events" />
-    <author>
-      <name>Pieter Humphrey</name>
-    </author>
-    <id>tag:spring.io,2015-03-31:2052</id>
-    <updated>2015-03-31T11:07:00Z</updated>
-    <content type="html">&lt;p&gt;Recorded at SpringOne2GX 2014. &lt;/p&gt;
-&lt;p&gt;Speaker: Paul King &lt;/p&gt;
-&lt;p&gt;More Groovy Track &lt;/p&gt;
-&lt;p&gt;Slides: &lt;a href="http://www.slideshare.net/SpringCentral/groovy-asttransforms-paulkingsep2014b"&gt;http://www.slideshare.net/SpringCentral/groovy-asttransforms-paulkingsep2014b &lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;In this talk you'll learn about some of Groovy's AST transformations.&lt;/p&gt;
-&lt;p&gt;&#xD;
-  &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/hLBahy6lPWI" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&#xD;
-&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>SpringOne2GX 2014 Replay: Advanced Groovy Tips and Tricks</title>
-    <link rel="alternate" href="https://spring.io/blog/2015/03/31/springone2gx-2014-replay-advanced-groovy-tips-and-tricks" />
-    <category term="news" label="News and Events" />
-    <author>
-      <name>Pieter Humphrey</name>
-    </author>
-    <id>tag:spring.io,2015-03-31:2050</id>
-    <updated>2015-03-31T11:02:00Z</updated>
-    <content type="html">&lt;p&gt;Recorded at SpringOne2GX 2014. &lt;/p&gt;
-&lt;p&gt;Speaker: Kenneth Kousen &lt;/p&gt;
-&lt;p&gt;Core Groovy Track&lt;/p&gt;
-&lt;p&gt;Slides: &lt;a href="http://www.slideshare.net/SpringCentral/advanced-groovy-tips-and-tricks"&gt;http://www.slideshare.net/SpringCentral/advanced-groovy-tips-and-tricks&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Groovy has a very easy learning curve for Java developers, so many people become Groovy users without realizing all it can do. This presentation will examine features of Groovy that can make your life easier once you're past the initial adoption stage. Prerequisite: Some Groovy knowledge&lt;/p&gt;
-&lt;p&gt;&#xD;
-  &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/xzc-LoJ0mt0" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&#xD;
-&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>SpringOne2GX 2014 Replay: Distributed Platform Development with Groovy</title>
-    <link rel="alternate" href="https://spring.io/blog/2015/03/31/springone2gx-2014-replay-distributed-platform-development-with-groovy" />
-    <category term="news" label="News and Events" />
-    <author>
-      <name>Pieter Humphrey</name>
-    </author>
-    <id>tag:spring.io,2015-03-31:2049</id>
-    <updated>2015-03-31T10:45:00Z</updated>
-    <content type="html">&lt;p&gt;Recorded at SpringOne2GX 2014.&lt;/p&gt;
-&lt;p&gt; Speaker: Dan Woods &lt;/p&gt;
-&lt;p&gt;Core Groovy Track &lt;/p&gt;
-&lt;p&gt;Slides: &lt;a href="http://www.slideshare.net/SpringCentral/4pieter-springone2gx2014distributedplatformdev"&gt;http://www.slideshare.net/SpringCentral/4pieter-springone2gx2014distributedplatformdev&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Building an Enterprise Application Stack means the necessity to have a service tier that can scale to the demands of business. This talk will discuss the approach to developing a scalable enterprise architecture, and will demonstrate implementations based on the variety of technologies available from the Groovy ecosystem, including Grails, Spring, Spring Boot, and Spring Integration.&lt;/p&gt;
-&lt;p&gt;&#xD;
-  &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/5IOCM_76wJ8" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&#xD;
-&lt;/p&gt;</content>
   </entry>
 </feed>
 

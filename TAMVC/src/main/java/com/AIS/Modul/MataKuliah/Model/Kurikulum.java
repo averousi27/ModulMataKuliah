@@ -26,7 +26,7 @@ public class Kurikulum{
 
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name="id_sat_man")
-	private SatMan satman;
+	private SatMan satMan;
 	
 	@Column(name="tahun_mulai")
 	private String tahunMulai;
@@ -48,12 +48,12 @@ public class Kurikulum{
 		this.idKurikulum = idKurikulum;
 	}
 
-	public SatMan getSatman() {
-		return satman;
+	public SatMan getSatMan() {
+		return satMan;
 	}
 
-	public void setSatman(SatMan satman) {
-		this.satman = satman;
+	public void setSatMan(SatMan satMan) {
+		this.satMan = satMan;
 	}
 
 	public String getTahunMulai() {

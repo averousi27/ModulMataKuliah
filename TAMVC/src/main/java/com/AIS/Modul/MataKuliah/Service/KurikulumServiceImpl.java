@@ -30,14 +30,13 @@ public class KurikulumServiceImpl implements KurikulumService {
 
 	@Override
 	public Kurikulum findById(String idKurikulum) {
-		// TODO Auto-generated method stub
-		return null;
+		return kurikulumRepo.findById(idKurikulum);
 	
 	}
 
 	@Override
 	public void editKurikulum(Kurikulum kurikulum, String idKurikulum) {
-		// TODO Auto-generated method stub
+		kurikulumRepo.editKurikulum(kurikulum, idKurikulum);
 		
 	}
 
@@ -50,18 +49,37 @@ public class KurikulumServiceImpl implements KurikulumService {
 	@Override
 	public boolean addKurikulumAction(String idKurikulum, String idSatMan,
 			String tahunMulai, String tahunAkhir, Boolean statusKurikulum) {
-		if(tahunMulai != null && tahunAkhir != null){
+		if(idSatMan != null && tahunMulai != null 
+				&& tahunAkhir != null && statusKurikulum != null){
 			Kurikulum kurikulum = new Kurikulum();
 			kurikulum.setIdKurikulum(idKurikulum);
-			kurikulum.setSatman(satManServ.findById(idSatMan));
+			kurikulum.setSatMan(satManServ.findById(idSatMan));
 			kurikulum.setTahunMulai(tahunMulai);
 			kurikulum.setTahunAkhir(tahunAkhir);
 			kurikulum.setStatusKurikulum(statusKurikulum);
 			
-			this.addKurikulum(kurikulum);
+			this.editKurikulum(kurikulum, idKurikulum);;
 			return true;
 		}
 		return false;
 	}
+
+	@Override
+	public boolean editKurikulumAction(String idKurikulum, String idSatMan, String tahunMulai,
+			String tahunAkhir, Boolean statusKurikulum) {
+		if(idSatMan != null && tahunMulai != null 
+				&& tahunAkhir != null && statusKurikulum != null){
+			Kurikulum kurikulum = kurikulumRepo.findById(idKurikulum);
+			kurikulum.setSatMan(satManServ.findById(idSatMan));
+			kurikulum.setTahunMulai(tahunMulai);
+			kurikulum.setTahunAkhir(tahunAkhir);
+			kurikulum.setStatusKurikulum(statusKurikulum);
+			this.editKurikulum(kurikulum, idKurikulum);
+			
+			return true;
+		}
+		return false;
+	}
+	
 	
 }

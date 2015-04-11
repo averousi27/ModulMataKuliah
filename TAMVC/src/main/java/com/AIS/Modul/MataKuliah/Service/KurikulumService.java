@@ -11,5 +11,5 @@ public interface KurikulumService {
     public void addKurikulum(Kurikulum kurikulum);
     public void editKurikulum(Kurikulum kurikulum, String idKurikulum);
 	boolean addKurikulumAction(String idKurikulum, String idSatMan, String tahunMulai, String tahunAkhir, Boolean statusKurikulum);
-    
+    boolean editKurikulumAction(String idKurikulum, String idSatMan, String tahunMulai, String tahunAkhir, Boolean statusKurikulum);
 }

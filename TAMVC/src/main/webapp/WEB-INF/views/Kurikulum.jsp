@@ -8,8 +8,8 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>Menu Kurikulum</title>
-		<link rel="stylesheet" href="<c:url value="/resources/css/bootstrap.css"/>" type="text/css" />
-		<link rel="stylesheet" href="<c:url value="/resources/css/bootstrap.min.css"/>" type="text/css" />
+		<link rel="stylesheet" href="${pageContext.servletContext.contextPath}/resources/css/bootstrap.css"/>
+		<link rel="stylesheet" href="${pageContext.servletContext.contextPath}/resources/css/bootstrap.min.css"/>
     </head>
     
     <body> 
@@ -56,12 +56,13 @@
 		</nav>
     	<!-- <h1>Hello World! ${message}</h1> -->
     	<h1>Menu Kurikulum</h1>
-    	<a href="tambah" class="btn btn-success">Tambah Kurikulum</a>
+    	<a href="tambahkurikulum" class="btn btn-success">Tambah Kurikulum</a>
     	<form id="myObject" action="showKurikulum" method="get">
     	<table class="table table-striped table-hover ">
 			  <thead>
 			    <tr>
 			      <th>ID Kurikulum</th>
+			      <th>Nama Satuan Manajemen</th>
 			      <th>Tahun Mulai</th>
 			      <th>Tahun Akhir</th>
 			      <th>Status Kurikulum</th>
@@ -71,11 +72,12 @@
 			  <c:forEach items="${kurikulums}" var="kurikulum">
 			    <tr>
 			      <td>${kurikulum.idKurikulum}</td>
+			      <td>${kurikulum.satMan.namaSatMan}</td>
 			      <td>${kurikulum.tahunMulai}</td>
 			      <td>${kurikulum.tahunAkhir}</td>
 			      <td>${kurikulum.statusKurikulum}</td>
-			      <td><a href="kurikulum/${kurikulum.idKurikulum}" class="btn btn-success">Ubah</a></td>
-			      <td><a href="kurikulum/ubahkurikulum/${kurikulum.idKurikulum}" class="btn btn-danger">Non-Aktif</a></td>
+			      <td><a href="ubahkurikulum/kurikulum-${kurikulum.idKurikulum}" class="btn btn-success">Ubah</a></td>
+			      <td><a href="ubahkurikulum/${kurikulum.idKurikulum}" class="btn btn-danger">Non-Aktif</a></td>
 			    </tr>
 			    </c:forEach>
 			  </tbody>

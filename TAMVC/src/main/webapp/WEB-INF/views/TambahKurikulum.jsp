@@ -8,8 +8,8 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>Tambah Kurikulum</title>
-		<link rel="stylesheet" href="<c:url value="/resources/css/bootstrap.css"/>" type="text/css" />
-		<link rel="stylesheet" href="<c:url value="/resources/css/bootstrap.min.css"/>" type="text/css" />
+		<link rel="stylesheet" href="${pageContext.servletContext.contextPath}/resources/css/bootstrap.css"/>
+		<link rel="stylesheet" href="${pageContext.servletContext.contextPath}/resources/css/bootstrap.min.css"/>
     </head>
     
     <body> 
@@ -55,20 +55,25 @@
 		  </div>
 		</nav>
 		<h1>Tambah Kurikulum</h1>
-    	<form class="form-horizontal" action="addKurikulumAction" method="get">
+    	<form class="form-horizontal" action="tambahkurikulum/aksi" method="post">
 		  <fieldset>
 		    <div class="form-group">
 		      <label for="inputEmail" class="col-lg-2 control-label">ID Kurikulum</label>
 		      <div class="col-lg-10">
-		        <input type="text" class="form-control" id="inputDefault">
+		        <input type="text" class="form-control" id="inputDefault" name="idKurikulumTxt">
 		      </div>
 		    </div>
 		    <div class="form-group">
 		      <label for="select" class="col-lg-2 control-label">Satuan Manajemen</label>
 		      <div class="col-lg-10">
-		        <select class="form-control" id="select">
-		        <c:forEach items="${satmans}" var="satman">
-		          <option>${satman.idSatMan}. ${satman.namaSatMan}</option>
+		        <select class="form-control" id="select" name="idSatManTxt">
+		        <c:forEach items="${satMans}" var="satman">
+		        	<c:if test="${selectedSatMan == satman.idSatMan}">
+		        		<option selected="selected" value="${satman.idSatMan}">${satman.idSatMan}. ${satman.namaSatMan}</option>
+		        	</c:if>
+		          	<c:if test="${selectedSatMan != satman.idSatMan}">
+		        		<option value="${satman.idSatMan}">${satman.idSatMan}. ${satman.namaSatMan}</option>
+		        	</c:if>
 		        </c:forEach>
 		        </select>
 		      </div>
@@ -76,13 +81,13 @@
 		    <div class="form-group">
 		      <label for="inputEmail" class="col-lg-2 control-label">Tahun Mulai</label>
 		      <div class="col-lg-10">
-		        <input type="text" class="form-control" id="inputDefault">
+		        <input type="text" class="form-control" id="inputDefault" name="tahunMulaiTxt">
 		      </div>
 		    </div>
 		    <div class="form-group">
 		      <label for="inputEmail" class="col-lg-2 control-label">Tahun Akhir</label>
 		      <div class="col-lg-10">
-		        <input type="text" class="form-control" id="inputDefault">
+		        <input type="text" class="form-control" id="inputDefault" name="tahunAkhirTxt">
 		      </div>
 		    </div>
 		    <div class="form-group">
@@ -90,13 +95,13 @@
 		      <div class="col-lg-10">
 		        <div class="radio">
 		          <label>
-		            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+		            <input type="radio" name="statusKurikulumOpt" id="optionsRadios1" value="1">
 		           Aktif
 		          </label>
 		        </div>
 		        <div class="radio">
 		          <label>
-		            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+		            <input type="radio" name="statusKurikulumOpt" id="optionsRadios1" value="0">
 		           Non-Aktif
 		          </label>
 		        </div>
@@ -104,7 +109,7 @@
 		    </div>
 		    <div class="form-group">
 		      <div class="col-lg-10 col-lg-offset-2">
-		        <button type="reset" class="btn btn-default" a href="/kurikulum">Cancel</button>
+		        <button type="reset" class="btn btn-default" a href="kurikulum">Cancel</button>
 		        <button type="submit" class="btn btn-primary">Submit</button>
 		      </div>
 		    </div>

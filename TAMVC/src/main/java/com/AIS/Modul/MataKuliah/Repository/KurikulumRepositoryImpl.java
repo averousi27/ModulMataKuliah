@@ -26,8 +26,7 @@ public class KurikulumRepositoryImpl implements KurikulumRepository {
 	@Override
 	@Transactional
 	public Kurikulum findById(String idKurikulum) {
-		// TODO Auto-generated method stub
-		return null;
+		return (Kurikulum) sessionFactory.getCurrentSession().get(Kurikulum.class, idKurikulum);
 	}
 
 	@Override
