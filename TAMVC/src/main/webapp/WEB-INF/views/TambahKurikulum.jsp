@@ -57,10 +57,10 @@
 		<h1>Tambah Kurikulum</h1>
     	<form class="form-horizontal" action="tambahkurikulum/aksi" method="post">
 		  <fieldset>
-		    <div class="form-group">
-		      <label for="inputEmail" class="col-lg-2 control-label">ID Kurikulum</label>
+		  <div class="form-group">
+		      <label for="inputEmail" class="col-lg-2 control-label">Nama Kurikulum</label>
 		      <div class="col-lg-10">
-		        <input type="text" class="form-control" id="inputDefault" name="idKurikulumTxt">
+		        <input type="text" class="form-control" id="inputDefault" name="nmKurikulumTxt">
 		      </div>
 		    </div>
 		    <div class="form-group">
@@ -69,10 +69,10 @@
 		        <select class="form-control" id="select" name="idSatManTxt">
 		        <c:forEach items="${satMans}" var="satman">
 		        	<c:if test="${selectedSatMan == satman.idSatMan}">
-		        		<option selected="selected" value="${satman.idSatMan}">${satman.idSatMan}. ${satman.namaSatMan}</option>
+		        		<option selected="selected" value="${satman.idSatMan}">${satman.nmSatMan}</option>
 		        	</c:if>
 		          	<c:if test="${selectedSatMan != satman.idSatMan}">
-		        		<option value="${satman.idSatMan}">${satman.idSatMan}. ${satman.namaSatMan}</option>
+		        		<option value="${satman.idSatMan}">${satman.nmSatMan}</option>
 		        	</c:if>
 		        </c:forEach>
 		        </select>

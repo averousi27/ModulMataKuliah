@@ -58,21 +58,15 @@
     	<form class="form-horizontal" action="kurikulum-${kurikulumObj.idKurikulum}" method="post">
 		  <fieldset>
 		    <div class="form-group">
-		      <label for="inputEmail" class="col-lg-2 control-label">ID Kurikulum</label>
-		      <div class="col-lg-10">
-		        <input type="text" class="form-control" id="disabledInput" name="idKurikulumTxt" disabled="" value="${kurikulumObj.idKurikulum}">
-		      </div>
-		    </div>
-		    <div class="form-group">
 		      <label for="select" class="col-lg-2 control-label">Satuan Manajemen</label>
 		      <div class="col-lg-10">
 		        <select class="form-control" id="select" name="idSatManTxt">
 		        <c:forEach items="${satMans}" var="satman">
 		        	<c:if test="${selectedSatMan == kurikulumObj.satMan.idSatMan}">
-		        		<option selected="selected" value="${kurikulumObj.satMan.idSatMan}">${kurikulumObj.satMan.idSatMan}. ${kurikulumObj.satMan.namaSatMan}</option>
+		        		<option selected="selected" value="${kurikulumObj.satMan.idSatMan}">${kurikulumObj.satMan.nmSatMan}</option>
 		        	</c:if>
 		          	<c:if test="${selectedSatMan != kurikulumObj.satMan.idSatMan}">
-		        		<option value="${satman.idSatMan}">${satman.idSatMan}. ${satman.namaSatMan}</option>
+		        		<option value="${satman.idSatMan}">${satman.nmSatMan}</option>
 		        	</c:if>
 		        </c:forEach>
 		        </select>
@@ -81,19 +75,19 @@
 		    <div class="form-group">
 		      <label for="inputEmail" class="col-lg-2 control-label">Tahun Mulai</label>
 		      <div class="col-lg-10">
-		        <input type="text" class="form-control" id="inputDefault" name="tahunMulaiTxt" value="${kurikulumObj.tahunMulai}">
+		        <input type="text" class="form-control" id="inputDefault" name="tahunMulaiTxt" value="${kurikulumObj.thnMulai}">
 		      </div>
 		    </div>
 		    <div class="form-group">
 		      <label for="inputEmail" class="col-lg-2 control-label">Tahun Akhir</label>
 		      <div class="col-lg-10">
-		        <input type="text" class="form-control" id="inputDefault" name="tahunAkhirTxt" value="${kurikulumObj.tahunAkhir }">
+		        <input type="text" class="form-control" id="inputDefault" name="tahunAkhirTxt" value="${kurikulumObj.thnAkhir }">
 		      </div>
 		    </div>
 		    <div class="form-group">
 		      <label class="col-lg-2 control-label">Status Kurikulum</label>
 		      <div class="col-lg-10">
-		        	<c:if test="${kurikulumObj.statusKurikulum == 'true'}"> 
+		        	<c:if test="${kurikulumObj.aStatusKurikulum == 'true'}"> 
 				        <div class="radio">
 				        	<label>
 					            <input type="radio" name="statusKurikulumOpt" id="optionsRadios1" value="1" checked="">
@@ -107,7 +101,7 @@
 					        </label>
 					    </div>
 			        </c:if>
-			        <c:if test="${kurikulumObj.statusKurikulum == 'false' }">
+			        <c:if test="${kurikulumObj.aStatusKurikulum == 'false' }">
 			        	<div class="radio">
 			        		<label>
 				        		<input type="radio" name="statusKurikulumOpt" id="optionsRadios1" value="1">

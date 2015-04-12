@@ -2,12 +2,14 @@ package com.AIS.Modul.MataKuliah.Model;
 
 import java.util.List;
 import java.util.Set;
+import java.util.UUID;
 import java.io.Serializable;
 import java.sql.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
@@ -16,45 +18,61 @@ import javax.persistence.OneToMany;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
+import org.hibernate.annotations.GenericGenerator;
+
 @Entity
 @Table(name="sat_man")
 public class SatMan{
 	
 	@Id
 	@Column(name="id_sat_man")
-	private String idSatMan; 
+	@GeneratedValue(generator="uuid")
+	@GenericGenerator(name = "uuid", strategy = "uuid2")
+	@org.hibernate.annotations.Type(type="pg-uuid")
+	private UUID idSatMan; 
 	
-	@Column(name="nama_sat_man")
-	private String namaSatMan;
+	@Column(name="sat_id_sat_man")
+	private UUID idSatManInduk;
 	
-	@Column(name="status_sat_man")
-	private String statusSatMan; 
+	@Column(name="nm_sat_man")
+	private String nmSatMan;
+	
+	@Column(name="a_sat_man_aktif")
+	private String aSatManAktif; 
  
 	@OneToMany(fetch=FetchType.LAZY, mappedBy="satMan")
 	private List<Kurikulum> kurikulums;
 
-	public String getIdSatMan() {
+	public UUID getIdSatMan() {
 		return idSatMan;
 	}
 
-	public void setIdSatMan(String idSatMan) {
+	public void setIdSatMan(UUID idSatMan) {
 		this.idSatMan = idSatMan;
 	}
 
-	public String getNamaSatMan() {
-		return namaSatMan;
+	public UUID getIdSatManInduk() {
+		return idSatManInduk;
 	}
 
-	public void setNamaSatMan(String namaSatMan) {
-		this.namaSatMan = namaSatMan;
+	public void setIdSatManInduk(UUID idSatManInduk) {
+		this.idSatManInduk = idSatManInduk;
 	}
 
-	public String getStatusSatMan() {
-		return statusSatMan;
+	public String getNmSatMan() {
+		return nmSatMan;
 	}
 
-	public void setStatusSatMan(String statusSatMan) {
-		this.statusSatMan = statusSatMan;
+	public void setNmSatMan(String nmSatMan) {
+		this.nmSatMan = nmSatMan;
+	}
+
+	public String getaSatManAktif() {
+		return aSatManAktif;
+	}
+
+	public void setaSatManAktif(String aSatManAktif) {
+		this.aSatManAktif = aSatManAktif;
 	}
 
 	public List<Kurikulum> getKurikulums() {
@@ -64,7 +82,5 @@ public class SatMan{
 	public void setKurikulums(List<Kurikulum> kurikulums) {
 		this.kurikulums = kurikulums;
 	}
-	
-	
 	
 }

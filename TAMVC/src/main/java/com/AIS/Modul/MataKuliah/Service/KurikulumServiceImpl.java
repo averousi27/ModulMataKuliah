@@ -1,6 +1,7 @@
 package com.AIS.Modul.MataKuliah.Service;
 
 import java.util.List;
+import java.util.UUID;
 
 import com.AIS.Modul.MataKuliah.Model.Kurikulum;
 import com.AIS.Modul.MataKuliah.Repository.KurikulumRepository;
@@ -29,13 +30,13 @@ public class KurikulumServiceImpl implements KurikulumService {
 	}
 
 	@Override
-	public Kurikulum findById(String idKurikulum) {
+	public Kurikulum findById(UUID idKurikulum) {
 		return kurikulumRepo.findById(idKurikulum);
 	
 	}
 
 	@Override
-	public void editKurikulum(Kurikulum kurikulum, String idKurikulum) {
+	public void editKurikulum(Kurikulum kurikulum, UUID idKurikulum) {
 		kurikulumRepo.editKurikulum(kurikulum, idKurikulum);
 		
 	}
@@ -47,38 +48,44 @@ public class KurikulumServiceImpl implements KurikulumService {
 	}
 
 	@Override
-	public boolean addKurikulumAction(String idKurikulum, String idSatMan,
-			String tahunMulai, String tahunAkhir, Boolean statusKurikulum) {
-		if(idSatMan != null && tahunMulai != null 
-				&& tahunAkhir != null && statusKurikulum != null){
+	public boolean addKurikulumAction(UUID idSatMan, String nmKurikulum,
+			String thnMulai, String thnAkhir, Boolean aStatusKurikulum) {
+		if(idSatMan != null && thnMulai != null 
+				&& thnAkhir != null && aStatusKurikulum != null){
 			Kurikulum kurikulum = new Kurikulum();
-			kurikulum.setIdKurikulum(idKurikulum);
+			//kurikulum.setIdKurikulum(UUID.randomUUID());
 			kurikulum.setSatMan(satManServ.findById(idSatMan));
-			kurikulum.setTahunMulai(tahunMulai);
-			kurikulum.setTahunAkhir(tahunAkhir);
-			kurikulum.setStatusKurikulum(statusKurikulum);
+			kurikulum.setNmKurikulum(nmKurikulum);
+			kurikulum.setThnMulai(thnMulai);
+			kurikulum.setThnAkhir(thnAkhir);
+			kurikulum.setaStatusKurikulum(aStatusKurikulum);
 			
-			this.editKurikulum(kurikulum, idKurikulum);;
+			this.addKurikulum(kurikulum);
 			return true;
 		}
 		return false;
 	}
 
 	@Override
-	public boolean editKurikulumAction(String idKurikulum, String idSatMan, String tahunMulai,
-			String tahunAkhir, Boolean statusKurikulum) {
-		if(idSatMan != null && tahunMulai != null 
-				&& tahunAkhir != null && statusKurikulum != null){
+	public boolean editKurikulumAction(UUID idKurikulum, UUID idSatMan, String thnMulai,
+			String thnAkhir, Boolean aStatusKurikulum) {
+		if(idSatMan != null && thnMulai != null 
+				&& thnAkhir != null && aStatusKurikulum != null){
 			Kurikulum kurikulum = kurikulumRepo.findById(idKurikulum);
 			kurikulum.setSatMan(satManServ.findById(idSatMan));
-			kurikulum.setTahunMulai(tahunMulai);
-			kurikulum.setTahunAkhir(tahunAkhir);
-			kurikulum.setStatusKurikulum(statusKurikulum);
+			kurikulum.setThnMulai(thnMulai);
+			kurikulum.setThnAkhir(thnAkhir);
+			kurikulum.setaStatusKurikulum(aStatusKurikulum);
 			this.editKurikulum(kurikulum, idKurikulum);
 			
 			return true;
 		}
 		return false;
+	}
+
+	@Override
+	public UUID convertToUUID(String source) {
+		return UUID.fromString(source);
 	}
 	
 	

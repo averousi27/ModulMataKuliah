@@ -61,7 +61,7 @@
     	<table class="table table-striped table-hover ">
 			  <thead>
 			    <tr>
-			      <th>ID Kurikulum</th>
+			      <th>Nama Kurikulum</th>
 			      <th>Nama Satuan Manajemen</th>
 			      <th>Tahun Mulai</th>
 			      <th>Tahun Akhir</th>
@@ -71,12 +71,12 @@
 			  <tbody>
 			  <c:forEach items="${kurikulums}" var="kurikulum">
 			    <tr>
-			      <td>${kurikulum.idKurikulum}</td>
-			      <td>${kurikulum.satMan.namaSatMan}</td>
-			      <td>${kurikulum.tahunMulai}</td>
-			      <td>${kurikulum.tahunAkhir}</td>
-			      <td>${kurikulum.statusKurikulum}</td>
-			      <td><a href="ubahkurikulum/kurikulum-${kurikulum.idKurikulum}" class="btn btn-success">Ubah</a></td>
+			      <td>${kurikulum.nmKurikulum}</td>
+			      <td>${kurikulum.satMan.nmSatMan}</td>
+			      <td>${kurikulum.thnMulai}</td>
+			      <td>${kurikulum.thnAkhir}</td>
+			      <td>${kurikulum.aStatusKurikulum}</td>
+			      <td><a href="ubahkurikulum/${kurikulum.idKurikulum}" class="btn btn-success">Ubah</a></td>
 			      <td><a href="ubahkurikulum/${kurikulum.idKurikulum}" class="btn btn-danger">Non-Aktif</a></td>
 			    </tr>
 			    </c:forEach>

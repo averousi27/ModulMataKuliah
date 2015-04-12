@@ -1,6 +1,7 @@
 package com.AIS.Modul.MataKuliah.Controller;
 
 import java.util.List;
+import java.util.UUID;
 
 import javax.servlet.http.HttpSession;
 
@@ -16,6 +17,7 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
@@ -23,7 +25,7 @@ public class KurikulumController {
 	 
 	@Autowired
 	private KurikulumService kurikulumServ;
-	
+	 
 	@Autowired
 	private SatManService satManServ;
 	 
@@ -38,13 +40,10 @@ public class KurikulumController {
 	
 		//tambah kurikulum
 		@RequestMapping(value="/tambahkurikulum/aksi", method=RequestMethod.POST)
-		public ModelAndView addKurikulumAction(String idKurikulumTxt, String idSatManTxt, String tahunMulaiTxt, 
+		public ModelAndView addKurikulumAction(String nmKurikulumTxt, String idSatManTxt, String tahunMulaiTxt, 
 				String tahunAkhirTxt, Boolean statusKurikulumOpt){
 			ModelAndView mav = new ModelAndView();
-			//System.out.println("ini tambah kurikulum" + idKurikulumTxt + " " + idSatManTxt + " " 
-					//+ tahunMulaiTxt + " " + tahunAkhirTxt + " " + statusKurikulumOpt);
-			Boolean flag = kurikulumServ.addKurikulumAction(idKurikulumTxt, idSatManTxt, tahunMulaiTxt, tahunAkhirTxt, statusKurikulumOpt);
-			//System.out.println("ini hasil fungsi" + flag);
+			Boolean flag = kurikulumServ.addKurikulumAction(satManServ.convertToUUID(idSatManTxt), nmKurikulumTxt, tahunMulaiTxt, tahunAkhirTxt, statusKurikulumOpt);
 			if(flag){
 				mav.setViewName("redirect:/kurikulum");
 			}
@@ -55,8 +54,8 @@ public class KurikulumController {
 		}
 		//end of tambah kurikulum
 		
-		@RequestMapping(value="/ubahkurikulum/kurikulum-{idKurikulum}", method=RequestMethod.GET)
-		public ModelAndView getKurikulumData(@PathVariable String idKurikulum){
+		@RequestMapping(value="/ubahkurikulum/{idKurikulum}", method=RequestMethod.GET)
+		public ModelAndView getKurikulumData(@PathVariable UUID idKurikulum){
 			ModelAndView mav = new ModelAndView();
 			Kurikulum kurikulumUbah = kurikulumServ.findById(idKurikulum);
 			mav.addObject("kurikulumObj", kurikulumUbah);
@@ -66,17 +65,16 @@ public class KurikulumController {
 			return mav;
 		}
 		//ubah kurikulum
-				@RequestMapping(value="ubahkurikulum/kurikulum-{idKurikulum}", method=RequestMethod.POST)
+				@RequestMapping(value="ubahkurikulum/{idKurikulum}", method=RequestMethod.POST)
 				public ModelAndView changeKurikulumAction(@PathVariable String idKurikulum, String idSatManTxt, String tahunMulaiTxt, 
 						String tahunAkhirTxt, Boolean statusKurikulumOpt){
 					ModelAndView mav = new ModelAndView();
-					System.out.println("ini ubah kurikulum" + idKurikulum + " " + idSatManTxt + " " 
-							+ tahunMulaiTxt + " " + tahunAkhirTxt + " " + statusKurikulumOpt);
-					Boolean flag = kurikulumServ.editKurikulumAction(idKurikulum, idSatManTxt, 
-							tahunMulaiTxt, tahunAkhirTxt, statusKurikulumOpt);
-					System.out.println("ini hasil fungsi" + flag);
+					Boolean flag = kurikulumServ.editKurikulumAction(kurikulumServ.convertToUUID(idKurikulum), satManServ.convertToUUID(idSatManTxt), tahunMulaiTxt, tahunAkhirTxt, statusKurikulumOpt);
 					if(flag){
 						mav.setViewName("redirect:/kurikulum");
+					}
+					else{
+						mav.setViewName("redirect:/ubahkurikulum/" + idKurikulum);
 					}
 					return mav;
 				}

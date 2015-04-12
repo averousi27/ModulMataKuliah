@@ -1,6 +1,7 @@
 package com.AIS.Modul.MataKuliah.Service;
 
 import java.util.List;
+import java.util.UUID;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -20,7 +21,7 @@ public class SatManServiceImpl implements SatManService{
 	}
 
 	@Override
-	public SatMan findById(String idSatMan) {
+	public SatMan findById(UUID idSatMan) {
 		return satManRepo.findById(idSatMan);
 	}
 
@@ -31,9 +32,14 @@ public class SatManServiceImpl implements SatManService{
 	}
 
 	@Override
-	public void editSatMan(SatMan kurikulum, String idSatMan) {
+	public void editSatMan(SatMan satMan, UUID idSatMan) {
 		// TODO Auto-generated method stub
 		
+	}
+
+	@Override
+	public UUID convertToUUID(String source) {
+		return UUID.fromString(source);
 	}
 
 }

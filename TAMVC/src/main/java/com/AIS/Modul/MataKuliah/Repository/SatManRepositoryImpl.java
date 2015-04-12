@@ -1,6 +1,7 @@
 package com.AIS.Modul.MataKuliah.Repository;
 
 import java.util.List;
+import java.util.UUID;
 
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,7 +26,7 @@ public class SatManRepositoryImpl implements SatManRepository {
 
 	@Override
 	@Transactional
-	public SatMan findById(String idSatMan) {
+	public SatMan findById(UUID idSatMan) {
 		return (SatMan) sessionFactory.getCurrentSession().get(SatMan.class, idSatMan);
 	}
 
@@ -36,7 +37,7 @@ public class SatManRepositoryImpl implements SatManRepository {
 	}
 
 	@Override
-	public void editSatMan(SatMan satMan, String idSatMan) {
+	public void editSatMan(SatMan satMan, UUID idSatMan) {
 		// TODO Auto-generated method stub
 		
 	}
